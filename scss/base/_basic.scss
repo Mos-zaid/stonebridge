@@ -1,0 +1,577 @@
+/*================== BASIC SETUP ===================== */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba($black, 0);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $white;
+  color: $gray;
+  font-family: $fontDefault;
+  font-size: $fontSizeDefault;
+  font-weight: 400;
+  line-height: $lineHeight;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+ul.list-style-none li{
+  list-style: none;
+}
+
+/*================== ANIMATION ===================== */
+
+.reveal-up{
+  // position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal-up.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.reveal-left{
+  // position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal-left.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal-right{
+  // position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal-right.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+
+/*================== FORM ELEMENTS ===================== */
+* {
+  outline: none !important;
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: $fontDefault;
+}
+
+
+
+/* link */
+
+a {
+  color: $darkpink;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+/*================== TEXT ===================== */
+
+.line-height-1{
+  line-height: 1;
+}
+
+.line-height-2{
+  line-height: 1.2;
+}
+
+.line-height-3{
+  line-height: 1.5;
+}
+
+.line-height-4{
+  line-height: 2;
+}
+
+.line-height-5{
+  line-height: 3;
+}
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  .text-lg-left{
+    text-align: left!important;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+
+/* TEXT COLOR*/
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+
+.text-light-gray {
+  color: $lightgray;
+}
+
+.text-light-pink {
+  color: $lightpink;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-dark-pink {
+  color: $darkpink;
+}
+
+.text-hover-white {
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+}
+
+
+
+
+/* TEXT FONT WEIGHT AND SIZE*/
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-80 {
+  font-size: 80px;
+}
+
+
+@media (min-width: 992px) {
+  .fs-lg-50{
+    font-size: 50px;
+  }
+}
+
+
+.ff-permanent-marker {
+  font-family: 'Permanent Marker', cursive;
+}
+
+
+
+
+
+/* Additional Classes*/
+
+.p-relative{
+  position: relative;
+}
+
+.p-absolute{
+  position: absolute;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.width-80{
+  width: 80%;
+}
+
+.width-70{
+  width: 70%;
+}
+
+// .sticky {
+//   position: fixed;
+//   z-index: 200;
+//   top: 0;
+//   width: 100%;
+// }
+
+// .sticky + main {
+//   padding-top: 50000px;
+// }
+
+.width-sm-90{
+  width: 90%;
+  @media (min-width: 992px) {
+    &{
+      width: 100%;
+    }
+  }
+  
+}
+
+@media (min-width: 992px) {
+
+  .col-lg-3-half{
+    flex: 0 0 auto;
+    width: 30%;
+  }
+
+  .col-lg-8-half{
+    flex: 0 0 auto;
+    width: 70%;
+  }
+}
+
+.width-auto{
+  width: auto!important;
+}
+
+.width-255{
+  width: 255px;
+}
+
+.max-width-295{
+  max-width: 295px;
+}
+
+.max-width-1000{
+  max-width: 1000px;
+}
+
+
+.max-width-1100{
+  max-width: 1100px;
+}
+
+.max-width-1150{
+  max-width: 1160px;
+}
+
+.max-width-1200{
+  max-width: 1200px;
+}
+
+.width-750{
+  width: 100%;
+  max-width: 750px;
+}
+
+.height-680{
+  width: 100%;
+  max-width: 680px;
+}
+
+.gap-1{
+  gap: 1rem;
+}
+
+.gap-2{
+  gap: 2.5rem;
+}
+
+.gap-3{
+  gap: 4rem;
+}
+
+.gap-4{
+  gap: 6rem;
+}
+
+.gap-5{
+  gap: 8rem;
+}
+
+.gap-6{
+  gap: 12rem;
+}
+
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.negative-margin-left-8{
+  margin-left: -8px;
+}
+
+@media (min-width: 992px) {
+  .mt-lg-2-half{
+    margin-top: 11px;
+  }
+}
+
+.z-index-20{
+  z-index: 20;
+}
+
+
+
+
+.bg-dark-pink{
+  background-color: $darkpink;
+}
+
+.bg-ultra-light-pink {
+  background-color: #fdecf6;
+}
+
+.bg-light-pink{
+  background-color: $lightpink;
+}
+
+.border-dark-pink{
+  border: 1.5px $darkpink solid;
+}
+
+.border-blue{
+  border: 1.5px $blue solid;
+}
+
+.border-white{
+  border: 1.5px $white solid;
+}
+
+.height-50{
+  min-height: 50px;
+}
+
+@media (min-width: 992px) {
+  .height-50{
+    height: 50px;
+  }
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.search-icon{
+  background: url(../images/icons/search-icon.png) no-repeat;
+  background-position: 165px 7px;
+  background-size: 20px;
+}
+
+.btn{
+  padding: 10px 10px;
+  border: 1px $lightpink solid;
+  color: $lightpink;
+}
+
+.btn--white{
+  border: 1px $white solid;
+  color: $white;
+}
+
+.btn--dark{
+  border: 1px $black solid;
+  color: $black;
+}
+
+.btn--dark-pink{
+  background-color: $darkpink;
+  border: 1px $darkpink solid;
+  color: $white;
+}
+
+.btn:hover{
+  background-color: $blue;
+  border: 1px $blue solid;
+  color: $white;
+}
+
+
+
+
+
+
+
+
+/* img responsive */
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+
+/* lazyload */
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 100ms;
+}
+
+img.lazyload:not([src]) {
+  visibility: hidden;
+}
+
+
+
+
+
+/* sr-only */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+
+
+
