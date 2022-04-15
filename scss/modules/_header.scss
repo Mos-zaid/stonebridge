@@ -3,7 +3,14 @@
 
 
     color: red;
-    
+    &__icons img{
+        width: 20px;
+        margin-left: 18px;
+    }
+
+    &__search{
+        right: 0;
+    }
 
 
     @media (min-width: 576px) {

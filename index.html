@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
     <!-- Favicon
@@ -36,12 +36,75 @@
 </head>
 <body>
     <header>
-        icons
-        <img src="facebook.svg" alt="Hello"/>
+        <!-- icons -->
+        <!-- Remember to change to SVG -->
+        <!-- <img src="./images/icons/facebook.svg" alt="Hello"/> -->
+        <div class="header__icons d-flex align-items-center justify-content-center justify-content-lg-end mt-80  pe-3 container mb-2 mb-lg-4 border-blue">
+            <span class="fs-11 d-inline-block"><b> SHARE </b></span>
+            <img class="ms-3" src="./images/icons/facebook.png" alt="Facebook Logo"/>
+            <img src="./images/icons/instagram.png" alt="Instagram Logo"/>
+            <img src="./images/icons/pinterest.png" alt="pinterest Logo"/>
+            <img src="./images/icons/twitter.png" alt="Twitter Logo"/>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row justify-content-between container px-lg-0 border-blue">
+            <div class="header__logo">
+                <p>logo goes here</p>
+            </div>
+            <div class="header__nav p-relative">
+                <div class="header__search p-absolute">
+                    <input type="text" placeholder="SEARCH PRODUCTS">
+                </div>
+                <div class="header__nav-links">
+                    <nav>
+                        <ul class=" list-style-none d-flex gap-2 text-uppercase fw-600">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Become A Dealer</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
 
     </header>
 
-    <img src="facebook.svg" alt="Hello"/>
+    <main>
 
+        <section class="carousel">
+                
+        </section>
+
+        <!-- OUR COLLECTIONS -->
+        <section class="our-collections text-uppercase title text-center">
+
+            <h3 class="title text-center">OUR COLLECTIONS</h3>
+            <div class="our-collections__container max-width-1550 d-flex flex-column flex-lg-row justify-content-between gap-1 border-blue mx-auto">
+                <div>
+                    <img src="./images/Grand Basket Calacatta Lagos Azul Install.png" alt="">
+                    <h3>Basketweave</h3>
+                </div>
+                <div>
+                    <img src="./images/Arden.jpg" alt="">
+                    <h3>Manhattan</h3>
+                </div>
+                <div>
+                    <img src="./images/Dalia Install.png" alt="">
+                    <h3>Capri</h3>
+                </div>
+                <div>
+                    <img src="./images/Tahiti Install.png" alt="">
+                    <h3>French Poly</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
