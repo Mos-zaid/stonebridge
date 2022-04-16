@@ -9,10 +9,26 @@
     }
 
     &__search{
-        right: 0;
+        right: 50%;
+        transform: translate(50%, 0);
+        max-width: 290px; 
+
+        ::-webkit-input-placeholder { /* Edge */
+            color: $black;
+          }
+
+        input{
+            width: 283px;
+            height: 37px;
+            border: 1px #3f5987 solid;
+        }
     }
 
+    &__logo img{
+        height: 170px;
+    }
 
+}
     @media (min-width: 576px) {
     
 
@@ -23,7 +39,16 @@
     }
     
     @media (min-width: 992px) {
-    
+        .header{
+
+            &__search{
+                // right: 0;
+                top: -5px;  
+                right: 10px;
+                transform: translate(0, 0);
+              
+            }        
+        }
     }
     
     @media (min-width: 1200px) {
@@ -35,4 +60,3 @@
     }
     
     
-}

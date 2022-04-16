@@ -31,9 +31,6 @@ body {
   min-height: 100vh;
 }
 
-.title{
-  font-family: $fontTitle;
-}
 
 h1,
 h2,
@@ -236,6 +233,39 @@ a {
 
 
 /* TEXT FONT WEIGHT AND SIZE*/
+
+.title{
+  font-family: $fontTitle;
+}
+
+.font-2{
+  font-family: $fontTitle;
+}
+
+.color-black{
+  color: $black;
+}
+
+.color-gray-1{
+  color: $gray;
+}
+
+.color-gray-2{
+  color: $gray2;
+}
+
+.color-gray-3{
+  color: $gray3;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
 .fw-400 {
   font-weight: 400;
 }
@@ -454,19 +484,17 @@ a {
   margin-left: -8px;
 }
 
-.mt-80{
-  margin-top: 80px;
+
+.mt-100{
+  margin-top: 100px;
 }
+
 
 @media (min-width: 992px) {
-  .mt-lg-2-half{
-    margin-top: 11px;
+    .mt-80{
+      margin-top: 80px!important;
+    }
   }
-}
-
-.z-index-20{
-  z-index: 20;
-}
 
 
 
