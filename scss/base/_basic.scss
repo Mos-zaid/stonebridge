@@ -149,6 +149,9 @@ a {
   line-height: 3;
 }
 
+.text-center {
+  text-align: center;
+}
 
 .text-left {
   text-align: left;
@@ -159,14 +162,20 @@ a {
 }
 
 @media (min-width: 992px) {
+  .text-lg-center{
+    text-align: center!important;
+  }
+
   .text-lg-left{
     text-align: left!important;
   }
+
+  .text-lg-right{
+    text-align: right!important;
+  }
+
 }
 
-.text-center {
-  text-align: center;
-}
 
 .text-justify {
   text-align: justify;
@@ -244,6 +253,10 @@ a {
 
 .color-black{
   color: $black;
+}
+
+.color-black-2{
+  color: $black2;
 }
 
 .color-gray-1{
@@ -336,6 +349,25 @@ a {
   font-size: 80px;
 }
 
+.ls-1{
+  letter-spacing: 1px;
+}
+
+.ls-2{
+  letter-spacing: 1.5px;
+}
+
+.ls-3{
+  letter-spacing: 2px;
+}
+
+.ls-4{
+  letter-spacing: 3px;
+}
+
+.ls-5{
+  letter-spacing: 5px;
+}
 
 @media (min-width: 992px) {
   .fs-lg-50{
@@ -364,6 +396,14 @@ a {
 
 .width-100{
   width: 100%;
+}
+
+.width-90{
+  width: 90%;
+}
+
+.width-95{
+  width: 95%;
 }
 
 .width-80{
@@ -395,17 +435,12 @@ a {
   
 }
 
+.flex-equal {
+  flex: 1;
+}
+
 @media (min-width: 992px) {
 
-  .col-lg-3-half{
-    flex: 0 0 auto;
-    width: 30%;
-  }
-
-  .col-lg-8-half{
-    flex: 0 0 auto;
-    width: 70%;
-  }
 }
 
 .width-auto{
@@ -415,6 +450,11 @@ a {
 .width-255{
   width: 255px;
 }
+
+.width-330{
+  width: 330px;
+}
+
 
 .max-width-295{
   max-width: 295px;
@@ -451,29 +491,57 @@ a {
   max-width: 680px;
 }
 
+
 .gap-1{
-  gap: 1rem;
+  gap: 1rem!important;
 }
 
 .gap-2{
-  gap: 2.5rem;
+  gap: 2.5rem!important;
 }
 
 .gap-3{
-  gap: 4rem;
+  gap: 4rem!important;
 }
 
 .gap-4{
-  gap: 6rem;
+  gap: 6rem!important;
 }
 
 .gap-5{
-  gap: 8rem;
+  gap: 8rem!important;
 }
 
 .gap-6{
-  gap: 12rem;
+  gap: 12rem!important;
 }
+
+@media (min-width: 992px) {
+  .gap-lg-1{
+    gap: 1rem!important;
+  }
+  
+  .gap-lg-2{
+    gap: 2.5rem!important;
+  }
+  
+  .gap-lg-3{
+    gap: 4rem!important;
+  }
+  
+  .gap-lg-4{
+    gap: 6rem!important;
+  }
+  
+  .gap-lg-5{
+    gap: 8rem!important;
+  }
+  
+  .gap-lg-6{
+    gap: 12rem!important;
+  }
+  }
+
 
 .py-6 {
   padding-top: 4rem !important;
@@ -523,6 +591,47 @@ a {
   border: 1.5px $white solid;
 }
 
+.br-1{
+  border-radius: 1px;
+}
+
+.br-2{
+  border-radius: 2px;
+}
+
+.br-3{
+  border-radius: 5px;
+}
+
+.br-4{
+  border-radius: 10px;
+}
+
+.br-5{
+  border-radius: 20px;
+}
+
+.br-50{
+  border-radius: 50%;
+}
+
+.bb-gray{
+  border-bottom: 2px $gray solid;
+}
+
+.bb-gray-2{
+  border-bottom: 2px $gray2 solid;
+}
+
+.bb-gray-3{
+  border-bottom: 2px $gray3 solid;
+}
+
+.bb-gray-custom{
+  border-bottom: 2px #d0d0d0 solid;
+}
+
+
 .height-50{
   min-height: 50px;
 }
@@ -545,8 +654,8 @@ a {
 
 .btn{
   padding: 10px 10px;
-  border: 1px $lightpink solid;
-  color: $lightpink;
+  border: 1px #c7c8ca solid;
+  background-color: #c7c8ca;
 }
 
 .btn--white{

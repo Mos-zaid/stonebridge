@@ -9,14 +9,21 @@
 
 .our-collections{
 
-    &__container{
-        flex: 1 1 0;
-    }
-
     img{
-        height: 570px;
+        height: 350px;
         object-fit: cover;
     }
+}
+
+@media (min-width: 992px) {
+    .our-collections{
+
+        img{
+            height: 570px;
+            object-fit: cover;
+        }
+    }
+    
 }
 
 /* ==================== CONTACT ==================== */

@@ -1,4 +1,13 @@
 .footer{
 
-    font-size: 500px;
+    &__icons img{
+        width: 30px;
+        margin-left: 18px;
+    }
+
+    &__contact img{
+        width: 55px;
+        margin-left: 18px;
+    }
+
 }
