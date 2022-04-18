@@ -484,14 +484,20 @@ a {
   width: 255px;
 }
 
+
+.max-width-295{
+  max-width: 295px!important;
+}
+
 .width-330{
   width: 330px;
 }
 
 
-.max-width-295{
-  max-width: 295px!important;
+.width-595{
+  width: 595px;
 }
+
 
 .max-width-1000{
   max-width: 1000px!important;
@@ -518,6 +524,12 @@ a {
   width: 100%;
   max-width: 750px;
 }
+
+.height-750{
+  height: 80vh;
+  max-height: 750px!important;
+}
+
 
 .height-680{
   width: 100%;
@@ -601,10 +613,16 @@ a {
 }
 
 
+
 @media (min-width: 992px) {
     .mt-80{
       margin-top: 80px!important;
     }
+
+    .mt-190{
+      margin-top: 190px;
+    }
+    
   }
 
 
