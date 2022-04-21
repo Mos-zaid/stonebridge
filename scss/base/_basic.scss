@@ -57,6 +57,33 @@ ul.list-style-none li{
 
 /*================== ANIMATION ===================== */
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: $gray;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation__black:after {
+  background-color: $black;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .hover-zoom{
   transition: transform .6s;
 }
@@ -789,6 +816,16 @@ a {
 
 @media (min-width: 992px) {
 
+  .max-height-lg-385{
+    height: 70vh;
+    max-height: 385px!important;
+  }
+
+  .max-height-lg-570{
+    height: 80vh;
+    max-height: 570px!important;
+  }
+
   .gap-lg-0{
     gap: 0!important;
   }
@@ -880,6 +917,10 @@ a {
   }
 
 
+
+.bg-black{
+  background-color: $black!important;
+}
 
 
 .bg-gray{
