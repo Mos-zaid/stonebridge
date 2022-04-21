@@ -8,9 +8,11 @@ $(document).ready(function(){
         nav:true,
         // margin:10,
         autoplay:true,
-        autoplayTimeout:2500,
+        autoplayTimeout:3500,
         smartSpeed:1500,
         autoplayHoverPause:false,
     });
+
 });
+
 

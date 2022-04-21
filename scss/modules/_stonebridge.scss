@@ -42,7 +42,9 @@
     vertical-align: middle;
 }
 
-// OWL Carousel
+
+/* ==================== OWL Carousel ==================== */
+
 .owl-dots {
     width: 100%;
     text-align: center;
@@ -81,4 +83,15 @@
 
 .owl-next {
     right: 1.5%;
+}
+
+.owl-testimonial {
+    .owl-prev {
+        display: none;
+    }
+    
+    .owl-next {
+        display: none;
+    }
+    
 }
