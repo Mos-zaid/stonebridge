@@ -27,11 +27,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.theme.default.min.css">
 
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- <link rel="icon" type="image/png" href="./images/Logo.png" /> -->
+    <link rel="icon" type="image/png" href="./images/Logo/StoneBridge-Logo_tagline.png" />
 
 </head>
 <body>
@@ -39,7 +43,7 @@
         <!-- icons -->
         <!-- Remember to change to SVG -->
         <!-- <img src="./images/icons/facebook.svg" alt="Hello"/> -->
-        <div class="header__icons d-flex align-items-center justify-content-center justify-content-lg-end mt-4 mt-80  pe-3 container mb-2 mb-lg-5">
+        <div class="header__icons d-flex align-items-center justify-content-center justify-content-lg-end mt-4 mt-lg-4  pe-3 container mb-2 mb-lg-2">
             <span class="fs-12 color-gray-3 fw-500 d-inline-block"> SHARE </span>
             <img class="ms-3" src="./images/icons/facebook.png" alt="Facebook Logo"/>
             <img src="./images/icons/instagram.png" alt="Instagram Logo"/>
@@ -47,9 +51,10 @@
             <img src="./images/icons/twitter.png" alt="Twitter Logo"/>
         </div>
 
+        <!-- LOGO -->
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center container px-lg-0">
             <div class="header__logo">
-                <a href="./index.html"><img src="./images/Logo/FidgetFUNatic-Logo.png" alt=""></a>
+                <a href="./index.html"><img src="./images/Logo/StoneBridge-Logo_tagline.png" alt=""></a>
             </div>
             <div class="header__nav p-relative ">
                 <div class="header__search p-absolute">
@@ -73,41 +78,51 @@
 
     </header>
 
-    <main class="mt-190">
+    <main class="mt-lg-0">
 
         <section class="carousel">
-                <div class="mb-lg-5 mt-lg-5">
-                    <img class="width-100 mb-lg-3" src="./images/2x6 Herringbone Nero Marquina Install-crop.png" alt="">
+                <div class="mb-lg-5 mt-lg-2">
+                    <div  id="owl-carousel" class="owl-carousel">
+                        <div>
+                            <img class="width-100 mb-lg-3 height-750 img-cover" src="./images/2x6 Herringbone Nero Marquina Install-crop.png" alt="">
+                        </div>
+                        <div>
+                            <img class="width-100 mb-lg-3 height-750 img-cover" src="./images/AMB NILO + OLEA SILVER.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="width-100 mb-lg-3 height-750 img-cover" src="./images/Zelij 4x4 Verde Cobre.jpg" alt="">
+                        </div>
+                      </div>                
                 </div>
         </section>
 
         <!-- OUR COLLECTIONS -->
         <section class="our-collections text-uppercase title text-center pb-lg-5">
 
-            <h3 class="title text-center fs-30 fw-400 color-black ls-5">OUR COLLECTIONS</h3>
-            <div class=" width-95 d-flex flex-column flex-lg-row justify-content-between gap-2 gap-lg-1 mx-auto">
-                <div class="flex-equal">
+            <h3 class="title text-center mt-5 mt-lg-0 fs-24 fs-lg-30 fw-400 color-black ls-5">OUR COLLECTIONS</h3>
+            <div class=" width-95 d-flex flex-wrap flex-column flex-md-row flex-lg-row justify-content-between justify-content-md-around justify-content-lg-between gap-2 gap-md-1 gap-lg-1 mx-auto">
+                <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-100 hover-zoom" src="./images/Grand Basket Calacatta Lagos Azul Install.png" alt="">
-                        <h3 class="fw-400 color-black">Basketweave</h3>
+                        <img class="width-85 width-md-100 width-lg-100 hover-zoom" src="./images/Grand Basket Calacatta Lagos Azul Install.png" alt="">
+                        <h3 class="fw-400 fs-lg-24 fs-22 color-black">Basketweave</h3>
                     </a>
                 </div>
-                <div class="flex-equal">
+                <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-100 hover-zoom" src="./images/Arden.jpg" alt="">
-                        <h3 class="fw-400 color-black">Manhattan</h3>
+                        <img class="width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Arden.jpg" alt="">
+                        <h3 class="fw-400 fs-lg-24 fs-22 color-black">Manhattan</h3>
                     </a>
                 </div>
-                <div class="flex-equal">
+                <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-100 hover-zoom" src="./images/Dalia Install.png" alt="">
-                        <h3 class="fw-400 color-black">Capri</h3>
+                        <img class="width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Dalia Install.png" alt="">
+                        <h3 class="fw-400 fs-lg-24 fs-22 color-black">Capri</h3>
                     </a>
                 </div>
-                <div class="flex-equal">
+                <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-100 hover-zoom" src="./images/Tahiti Install.png" alt="">
-                        <h3 class="fw-400 color-black">French Poly</h3>
+                        <img class="width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Tahiti Install.png" alt="">
+                        <h3 class="fw-400 fs-lg-24 fs-22 color-black">French Poly</h3>
                     </a>
                 </div>
             </div>
@@ -120,7 +135,7 @@
         <section class="testimonials max-height-570 d-flex justify-content-center align-items-center mt-lg-5" style="background: #cfcecd url('./images/Elongated Hex Calacatta Install.png') no-repeat center bottom; background-size: cover; box-shadow:inset 0 0 0 2000px rgba(207, 206, 205, 0.5);">
             <!-- <img src="./images/Elongated Hex Calacatta Install.png" alt=""> -->
             <div class="max-height-385 br-5 max-width-1160 width-80" style="background-color: rgba(255, 255, 255, 0.508);">
-                <h3 class="fw-400 color-gray-2 mx-auto text-center ls-4 ws-2">REVIEWS FROM OUR CLIENTS</h3>
+                <h3 class="fw-400 color-gray-2 mx-auto text-center fs-lg-24 fs-22 ls-4 ws-2 px-2 px-lg-0">REVIEWS FROM OUR CLIENTS</h3>
             </div>
 
         </section>
@@ -137,57 +152,57 @@
         </div>
 
         <!-- Nav Links -->
-        <div class="d-flex flex-column flex-lg-row max-width-1200 mx-auto text-center fs-18 pb-lg-5">
+        <div class="d-flex flex-column flex-lg-row max-width-1200 mx-auto text-center fs-15 fs-lg-16 pb-lg-5">
             
             <div class="flex-equal">
-                <h4 class="fs-24 fw-400 color-black bb-gray-custom bw-1 width-95 mx-auto">FEATURED</h4>
+                <h4 class="fs-24 fw-400 color-black bb-gray-custom mb-2 mb-lg-1 mb-2 bw-1 width-95 mx-auto">FEATURED</h4>
                 <nav>
                     <ul class="list-style-none ps-0">
-                        <li class="mb-3"><a href="#">New Products</a></li>
-                        <li class="mb-3"><a href="#">Collections</a></li>
-                        <li class="mb-3"><a href="#">Essentials</a></li>
-                        <li class="mb-3"><a href="#">Specialty & Custom</a></li>
-                        <li class="mb-3"><a href="#">Innovative Surfaces</a></li>
+                        <li class="mb-2"><a href="#">New Products</a></li>
+                        <li class="mb-2"><a href="#">Collections</a></li>
+                        <li class="mb-2"><a href="#">Essentials</a></li>
+                        <li class="mb-2"><a href="#">Specialty & Custom</a></li>
+                        <li class="mb-2"><a href="#">Innovative Surfaces</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="flex-equal">
-                <h4 class="fs-24 fw-400 color-black bb-gray-custom bw-1 width-95 mx-auto">PRODUCTS</h4>
+                <h4 class="fs-24 fw-400 color-black bb-gray-custom mb-lg-1 mb-2 bw-1 width-95 mx-auto">PRODUCTS</h4>
                 <nav>
                     <ul class="list-style-none ps-0">
-                        <li class="mb-3"><a href="#">Stone</a></li>
-                        <li class="mb-3"><a href="#">Porcelain</a></li>
-                        <li class="mb-3"><a href="#">Ceramic</a></li>
+                        <li class="mb-2"><a href="#">Stone</a></li>
+                        <li class="mb-2"><a href="#">Porcelain</a></li>
+                        <li class="mb-2"><a href="#">Ceramic</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="flex-equal">
-                <h4 class="fs-24 fw-400 color-black bb-gray-custom bw-1 width-95 mx-auto">INSPIRATION</h4>
+                <h4 class="fs-24 fw-400 color-black bb-gray-custom mb-lg-1 mb-2 bw-1 width-95 mx-auto">INSPIRATION</h4>
                 <nav>
                     <ul class="list-style-none ps-0">
-                        <li class="mb-3"><a href="#">Gallery</a></li>
-                        <li class="mb-3"><a href="#">Videos</a></li>
-                        <li class="mb-3"><a href="#">Press</a></li>
-                        <li class="mb-3"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Gallery</a></li>
+                        <li class="mb-2"><a href="#">Videos</a></li>
+                        <li class="mb-2"><a href="#">Press</a></li>
+                        <li class="mb-2"><a href="./about.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="flex-equal">
-                <h4 class="fs-24 fw-400 color-black bb-gray-custom bw-1 width-95 mx-auto">RESOURCES</h4>
+                <h4 class="fs-24 fw-400 color-black bb-gray-custom mb-lg-1 mb-2 bw-1 width-95 mx-auto">RESOURCES</h4>
                 <nav>
                     <ul class="list-style-none ps-0">
-                        <li class="mb-3"><a href="#">Product Brochure</a></li>
-                        <li class="mb-3"><a href="#">Dealer Login</a></li>
-                        <li class="mb-3"><a href="#">Case Studies</a></li>
-                        <li class="mb-3"><a href="./contact.html">Contact Us</a></li>
-                        <li class="mb-3"><a href="#">Careers</a></li>
+                        <li class="mb-2"><a href="#">Product Brochure</a></li>
+                        <li class="mb-2"><a href="#">Dealer Login</a></li>
+                        <li class="mb-2"><a href="#">Case Studies</a></li>
+                        <li class="mb-2"><a href="./contact.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="#">Careers</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
 
         <!-- FOOTER CONTACT -->
-        <div class="max-width-1200 width-90 mx-auto text-center text-lg-left mt-5 mt-lg-5 pt-lg-2 color-gray-4">
+        <div class="max-width-1200 width-90 mx-auto text-center text-lg-left mt-5 mt-lg-0 pt-lg-2 color-gray-4">
             <div class="d-flex flex-column flex-lg-row justify-content-between mb-0 bb-gray-custom pb-3 pb-lg-1 bw-4">
                 <div class="fs-13 fw-500">
                     <p class="my-0 mb-1">127 DUPONT STREET, PLAINVIEW NY 11803</p>
@@ -229,6 +244,12 @@
         </div>
     </footer>
 
-    <script src="./js/scripts.js"></script>
+      
+      <!-- OWL CAROUSEL -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+      
+      <script src="./js/scripts.js"></script>
+
 </body>
 </html>
