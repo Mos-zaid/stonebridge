@@ -290,6 +290,11 @@ a {
   font-family: $fontTitle;
 }
 
+.font-3{
+  font-family: $font3;
+}
+
+
 .color-black{
   color: $black;
 }
@@ -392,6 +397,11 @@ a {
   font-size: 24px;
 }
 
+.fs-28 {
+  font-size: 28px;
+}
+
+
 .fs-30 {
   font-size: 30px;
 }
@@ -456,6 +466,11 @@ a {
   .fs-lg-24 {
     font-size: 24px;
   }
+
+  .fs-lg-28 {
+    font-size: 28px;
+  }
+  
   
   .fs-lg-30 {
     font-size: 30px;
@@ -875,7 +890,7 @@ a {
 }
 
 .mt-100{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .mb-90{
@@ -894,7 +909,7 @@ a {
     }
 
     .mt-100{
-      margin-top: 50px;
+      margin-top: 25px;
     }    
 
     .mt-120{
@@ -1026,6 +1041,28 @@ a {
 .bw-5{
   border-width: 5px;
 }
+
+@media (min-width: 992px) {
+  .bw-lg-1{
+    border-width: 0.8px;
+  }
+  
+  .bw-lg-2{
+    border-width: 1px;
+  }
+  
+  .bw-lg-3{
+    border-width: 1.5px;
+  }
+  
+  .bw-lg-4{
+    border-width: 2.2px;
+  }
+  
+  .bw-lg-5{
+    border-width: 5px;
+  }
+  }
 
 
 .height-50{

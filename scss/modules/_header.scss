@@ -8,10 +8,21 @@
         margin-left: 18px;
     }
 
+    &__mobile-menu{
+        width: 40px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+
     &__search{
-        right: 50%;
-        transform: translate(50%, 0);
-        max-width: 290px; 
+        // right: 50%;
+        // transform: translate(50%, 0);
+        // max-width: 290px; 
+
+        right: 30%;
+        transform: translate(30%, 0);
 
         ::-webkit-input-placeholder { /* Edge */
             color: $black;

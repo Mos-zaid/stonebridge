@@ -52,9 +52,24 @@
     bottom: 1%;
 }
 
+// .owl-dot{
+    // color: white!important;
+    // background-color: black;
+    // z-index: 150000;
+// }
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: $gray!important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: $gray4!important;
+}
+
+
 .owl-dots span {
-    width: 20px !important;
-    height: 20px !important;
+    width: 12px !important;
+    height: 12px !important;
 }
 
 .owl-dots button {
