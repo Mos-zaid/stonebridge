@@ -93,13 +93,13 @@
     <main class="mt-lg-0">
 
         <!-- HOME PAGE CAROUSEL -->
-        <section class="carousel">
+        <section class="carousel" style="height: 90vh; max-height: 800px!important;">
                 <div class="mb-lg-5 mt-lg-2">
 
                     <!-- OWL Carousel -->
                     <div  id="owl-carousel" class="owl-one owl-carousel owl-theme">
                         <div>
-                            <img class="width-100 mb-lg-3 height-750 img-cover" src="./images/2x6 Herringbone Nero Marquina Install_small.png" alt="">
+                            <img class="width-100 mb-lg-3 height-750 img-cover" fetchpriority="high" src="./images/2x6 Herringbone Nero Marquina Install_small.png" alt="">
                         </div>
                         <div>
                             <img class="width-100 mb-lg-3 height-750 img-cover" src="./images/AMB NILO + OLEA SILVER_small.png" alt="">
@@ -118,25 +118,25 @@
             <div class=" width-95 d-flex flex-wrap flex-column flex-md-row flex-lg-row justify-content-between justify-content-md-around justify-content-lg-between gap-2 gap-md-1 gap-lg-1 mx-auto">
                 <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-85 width-md-100 width-lg-100 hover-zoom" src="./images/Grand Basket Calacatta Lagos Azul Install_small.png" alt="">
+                        <img loading="lazy" class="lazy width-85 width-md-100 width-lg-100 hover-zoom" src="./images/Grand Basket Calacatta Lagos Azul Install_small.png" data-src="./images/Grand Basket Calacatta Lagos Azul Install.png" alt="">
                         <h3 class="fw-400 fs-lg-24 fs-22 color-black hover-underline-animation hover-underline-animation__black">Basketweave</h3>
                     </a>
                 </div>
                 <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Arden_small.png" alt="">
+                        <img loading="lazy" class="lazy width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Arden_small.png" data-src="./images/Arden.jpg" alt="">
                         <h3 class="fw-400 fs-lg-24 fs-22 color-black hover-underline-animation hover-underline-animation__black">Manhattan</h3>
                     </a>
                 </div>
                 <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Dalia Install_small.png" alt="">
+                        <img loading="lazy" class="lazy width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Dalia Install_small.png" data-src="./images/Dalia Install.png" alt="">
                         <h3 class="fw-400 fs-lg-24 fs-22 color-black hover-underline-animation hover-underline-animation__black d-block d-lg-inline-block">Capri</h3>
                     </a>
                 </div>
                 <div class="col-12 col-md-5 col-lg-2-half">
                     <a href="#">
-                        <img class="width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Tahiti Install_small.png" alt="">
+                        <img loading="lazy" class="lazy width-85 width-md-100 width-lg-100  hover-zoom" src="./images/Tahiti Install_small.png" data-src="./images/Tahiti Install.png" alt="">
                         <h3 class="fw-400 fs-lg-24 fs-22 color-black hover-underline-animation hover-underline-animation__black">French Poly</h3>
                     </a>
                 </div>
@@ -147,7 +147,7 @@
         </section>
 
         <!-- TESTIMONIALS -->
-        <section class="testimonials py-5 py-lg-0 max-height-lg-570 d-flex justify-content-center align-items-center mt-lg-5" style="background: #cfcecd url('./images/Elongated Hex Calacatta Install.png') no-repeat center bottom; background-size: cover; box-shadow:inset 0 0 0 2000px rgba(207, 206, 205, 0.5);">
+        <section class="testimonials py-5 py-lg-0 max-height-lg-570 d-flex justify-content-center align-items-center mt-lg-5" style="background: #cfcecd url('./images/Elongated Hex Calacatta Install_small.png') no-repeat center bottom; background-size: cover; box-shadow:inset 0 0 0 2000px rgba(207, 206, 205, 0.5);">
             <!-- <img src="./images/Elongated Hex Calacatta Install.png" alt=""> -->
             <div class="max-height-lg-385 br-5 max-width-1160 width-90 width-lg-80 py-5 py-lg-0" style="background-color: rgba(255, 255, 255, 0.508);">
                 <h3 class="fw-400 color-gray-2 mx-auto text-center fs-lg-24 fs-22 ls-4 ws-2 px-2 px-lg-0">REVIEWS FROM OUR CLIENTS</h3>
@@ -276,11 +276,12 @@
         </div>
     </footer>
 
-      
-      <!-- OWL CAROUSEL -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
-      <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+      <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- OWL CAROUSEL -->
+    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
       
       <script src="./js/scripts.js"></script>
 
