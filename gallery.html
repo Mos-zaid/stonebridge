@@ -24,10 +24,10 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
     
     <!-- OWL Carousel -->
     <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
@@ -47,7 +47,7 @@
         <!-- icons -->
         <!-- Remember to change to SVG -->
         <!-- <img src="./images/icons/facebook.svg" alt="Hello"/> -->
-        <div class="header__icons d-flex align-items-center justify-content-center justify-content-lg-end mt-4 mt-lg-4  pe-3 container mb-2 mb-lg-2">
+        <div class="header__icons d-none d-lg-flex align-items-center justify-content-center justify-content-lg-end mt-4 mt-lg-4  pe-3 container mb-2 mb-lg-2">
             <span class="fs-12 color-gray-3 fw-500 d-inline-block"> SHARE </span>
             <img class="ms-3" src="./images/icons/facebook.png" alt="Facebook Logo"/>
             <img src="./images/icons/instagram.png" alt="Instagram Logo"/>
@@ -55,27 +55,58 @@
             <img src="./images/icons/twitter.png" alt="Twitter Logo"/>
         </div>
 
-        <!-- LOGO -->
-        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center container px-lg-0">
+
+        <!-- MOBILE LOGO AND SEARCH ICON -->
+        <div class="d-flex d-lg-none align-items-center justify-content-around">
+            <!-- MOBILE HOME ICON -->
+            <div class="header__mobile-home">
+                <a href="./index.html"><img src="./images/icons/ContactUS.png" alt=""></a>
+            </div>
+
+            <!-- MOBILE LOGO -->
+            <div class="header__mobile-logo">
+                <a href="./index.html"><img src="./images/Logo/StoneBridge-Logo_tagline.png" alt=""></a>
+            </div>
+
+            <!-- MOBILE HAMBURGER -->
+            <div>
+                <div class="pt-1 gap-1 header__mobile-menu d-lg-none d-block hamburger-script" aria-label="Button Hamburger">
+                    <img src="./images/icons/hamburger.png" alt="Hamburger Icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVLINKS -->
+        <div class="header__nav-links">
+            <nav>
+                <ul class="mobile-nav-script list-style-none d-none gap-2 text-uppercase fw-500 fs-16 color-gray-3 d-flex flex-column gap-2 align-content-center justify-content-center pb-4 ps-0 fw-600 text-center mt-3 mb-1">
+                    <li><a class="color-gray-3 hover-underline-animation" href="./about.html">About Us</a></li>
+                    <li><a class="color-gray-3 hover-underline-animation" href="#">Collections</a></li>
+                    <li><a class="color-gray-3 hover-underline-animation" href="#">Projects</a></li>
+                    <li><a class="color-gray-3 hover-underline-animation" href="./gallery.html">Gallery</a></li>
+                    <li><a class="color-gray-3 hover-underline-animation" href="#">Become A Dealer</a></li>
+                    <li><a class="color-gray-3 hover-underline-animation" href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <!-- DESKTOP LOGO & NAV LINKS -->
+        <div class="d-none d-lg-flex flex-lg-row justify-content-between align-items-center container px-lg-0">
+            <!-- DESKTOP LOGO -->
             <div class="header__logo">
                 <a href="./index.html"><img src="./images/Logo/StoneBridge-Logo_tagline.png" alt=""></a>
             </div>
             <div class="header__nav p-relative ">
-                <!-- SEARCH BAR -->
+                <!-- DESKTOP SEARCH BAR -->
                 <div class="header__search p-absolute">
                     <input class="px-3 fw-500 fs-12 color-black me-lg-2" type="text" placeholder="SEARCH PRODUCTS">
-                    <!-- MOBILE MENU BUTTON -->
-                    <div class="container justify-content-end">
-                        <div class="pt-1 gap-1 header__mobile-menu d-lg-none d-block hamburger-script" aria-label="Button Hamburger">
-                            <img src="./images/icons/hamburger.png" alt="Hamburger Icon">
-                        </div>
-                    </div>
-
                 </div>
+                 <!-- DESKTOP NAV LINKS -->
                 <div class="header__nav-links mt-100 ">
-                    <!-- NAV LINKS -->
                     <nav>
-                        <ul class=" list-style-none color-gray-3 d-none d-lg-flex flex-column flex-lg-row gap-2 text-uppercase fw-500 fs-16 color-gray-3">
+                        <ul class="list-style-none color-gray-3 d-none d-lg-flex flex-column flex-lg-row gap-2 text-uppercase fw-500 fs-16 color-gray-3">
                             <li><a class="color-gray-3 hover-underline-animation" href="./about.html">About Us</a></li>
                             <li><a class="color-gray-3 hover-underline-animation" href="#">Collections</a></li>
                             <li><a class="color-gray-3 hover-underline-animation" href="#">Projects</a></li>
@@ -218,12 +249,13 @@
     </footer>
 
       
-      <!-- OWL CAROUSEL -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
-      <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
-      
-      <script src="./js/scripts.js"></script>
+    <!-- JQUERY -->
+    <script src="./js/jQuery.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+
+    <script src="./js/scripts.js"></script>
 
 </body>
 </html>

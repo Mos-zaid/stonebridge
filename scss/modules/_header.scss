@@ -21,8 +21,13 @@
         // transform: translate(50%, 0);
         // max-width: 290px; 
 
-        right: 30%;
-        transform: translate(30%, 0);
+
+        // Correct one
+        // right: 30%;
+        // transform: translate(30%, 0);
+
+        right: 50%;
+        transform: translate(50%, 0);
 
         ::-webkit-input-placeholder { /* Edge */
             color: $black;
@@ -38,6 +43,10 @@
 
     &__logo img{
         height: 170px;
+    }
+
+    &__mobile-logo img{
+        height: 100px;
     }
 
 }

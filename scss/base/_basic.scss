@@ -92,6 +92,17 @@ ul.list-style-none li{
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.reveal-down{
+  // position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal-down.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .reveal-up{
   // position: relative;
   transform: translateY(150px);
@@ -882,6 +893,17 @@ a {
 
 .negative-margin-top-7{
   margin-top: -7px;
+}
+
+.negative-margin-top-15{
+  margin-top: -15px;
+}
+
+  @media (min-width: 992px) {
+    .negative-margin-top-15{
+      margin-top: 0px;
+    
+  }
 }
 
 .px-70{

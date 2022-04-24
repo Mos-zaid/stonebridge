@@ -1,20 +1,50 @@
 
-// OWL Carousel
-// $(document).ready(function(){
-//     $(".owl-carousel").owlCarousel({
-//         items:1,
-//         loop:true,
-//         dots: true,
-//         nav:true,
-//         // margin:10,
-//         autoplay:true,
-//         autoplayTimeout:3500,
-//         smartSpeed:1500,
-//         autoplayHoverPause:false,
-//     });
+/*================== JS IMPORTS ===================== */
+// Jquery
+// import JQuery from "./jQuery.js"
+// import HeroSlider from "./modules/HeroSlider"
 
-// });
+// Instantiate a new object using our modules/classes
+// var jquery = new JQuery()
+// var heroSlider = new HeroSlider()
 
+
+// Jquery
+// OWL carousel
+// Lazy sizes
+// Scripts
+
+
+
+/*================== MOBILE MENU ===================== */
+// 1 ELEMENT
+let hamburgerIcon = document.querySelector(".hamburger-script")
+let mobileNav = document.querySelector(".mobile-nav-script")
+let mobileNavShowing = false
+
+
+//  2 EVENT
+hamburgerIcon.addEventListener("click", toggleMobileMenu)
+
+
+// 3 ACTION
+function toggleMobileMenu(){
+  // mobileMenu.classList.toggle("site-header__nav-links__is-active");
+  if(mobileNavShowing){
+    // Add the initial values
+    mobileNav.classList.add("d-none");
+    // Remove the Mobile Classes
+    mobileNavShowing = false
+  }else{
+    // Remove the initial values
+    mobileNav.classList.remove("d-none");
+    // Add the Mobile Classes
+    mobileNavShowing = true
+  }
+}
+  
+
+/*================== OWL CAROUSEL ===================== */
 
 $(document).ready(function(){
     $('.owl-one').owlCarousel({
