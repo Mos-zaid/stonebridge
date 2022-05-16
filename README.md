@@ -38,9 +38,11 @@ The Project was to convert a PSD file to a WordPress theme using HTML, CSS, JS a
 - WordPress
 - Woocommerce
 - Mobile first
+- Lazy Loading images
 
 
 
 ## My Proposed Improvements
+- Improve Google page speed insights from 95% to 100%
 - Make HTML more readable
 - Make CSS more readable
