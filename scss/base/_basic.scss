@@ -92,6 +92,15 @@ ul.list-style-none li{
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.container-hover-zoom img{
+  transition: transform .6s;
+}
+
+.container-hover-zoom img:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
 .reveal-down{
   // position: relative;
   transform: translateY(-150px);
@@ -570,6 +579,12 @@ a {
 
 .p-absolute{
   position: absolute;
+}
+
+.center-absolute{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .width-100{

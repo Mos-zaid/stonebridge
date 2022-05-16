@@ -42,6 +42,89 @@ function toggleMobileMenu(){
     mobileNavShowing = true
   }
 }
+
+
+/*================== ANIMATION ===================== */
+// Fade Up Function
+function reveal__up() {
+  // Find all reveal-up elements
+  var reveals = document.querySelectorAll(".reveal-up");
+
+  // Loop through all of them
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 65;
+
+      // If the element is in within the screen
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal__up);
+
+// To check the scroll position on page load
+reveal__up();
+
+
+
+
+
+// Fade left
+function reveal__left() {
+  // Find all reveal-up elements
+  var reveals = document.querySelectorAll(".reveal-left");
+
+  // Loop through all of them
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+      // If the element is in within the screen
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal__left);
+
+// To check the scroll position on page load
+reveal__left();
+
+
+
+// Fade left
+function reveal__right() {
+  // Find all reveal-up elements
+  var reveals = document.querySelectorAll(".reveal-right");
+
+  // Loop through all of them
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+      // If the element is in within the screen
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal__right);
+
+// To check the scroll position on page load
+reveal__right();
   
 
 /*================== OWL CAROUSEL ===================== */
